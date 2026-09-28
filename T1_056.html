@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Suhu - T1_056</title>
+  <!-- Panggil file JS eksternal -->
+  <script src="T1_056.js" defer></script>
+</head>
+<body>
+  <h1>Konversi Suhu - T1_056</h1>
+
+  <form id="formSuhu">
+    <label for="nilaiSuhu">Masukkan Nilai Suhu:</label>
+    <input type="number" id="nilaiSuhu" placeholder="Contoh: 100" required>
+
+    <label for="tipeKonversi">Pilih Konversi:</label>
+    <select id="tipeKonversi" required>
+      <option value="CtoF">Celsius → Fahrenheit</option>
+      <option value="CtoR">Celsius → Reamur</option>
+      <option value="FtoC">Fahrenheit → Celsius</option>
+      <option value="FtoR">Fahrenheit → Reamur</option>
+      <option value="RtoC">Reamur → Celsius</option>
+      <option value="RtoF">Reamur → Fahrenheit</option>
+    </select>
+
+    <button type="submit">Konversi</button>
+  </form>
+
+  <div id="hasil"></div>
+</body>
+</html>
